@@ -1,0 +1,57 @@
+/* Mantiene el diseño original */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #fcfefc;
+  font-family: 'Arial', sans-serif;
+  flex-direction: column;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #d32f2f;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.sí-button, .no-button {
+  font-size: 1.5em;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.sí-button {
+  background-color: #4caf50;
+  color: white;
+}
+
+.no-button {
+  background-color: #f44336;
+  color: white;
+}
+
+/* ✅ Expande el botón "Sí" a toda la pantalla cuando llegue al último mensaje */
+.expand {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    font-size: 50px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+}
